@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toast {
+    position: fixed;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    transition: bottom 0.5s;
+}
+
+.toast.show {
+    bottom: 40px;
+}
